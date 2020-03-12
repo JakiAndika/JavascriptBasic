@@ -1,39 +1,16 @@
-// length
-var txt = "qwerty";
-document.getElementById('name').innerHTML = txt.length;
+var number = 12.356;
 
-//indexOf
-var txt = "I am seeking for a hot girl";
-document.getElementById('name').innerHTML = txt.indexOf('hot');
+//toString
+document.getElementById('name').innerHTML = number.toString();
 
-//substr
-var txt = "Apple, Microsoft, Linux";
-document.getElementById('name').innerHTML = txt.substr(1, 5);
+//toFixed
+document.getElementById('name').innerHTML = number.toFixed();
 
-//replace 
-var txt = "Please Visit Us";
-document.getElementById('name').innerHTML = txt.replace("Us", "DumbWaysToLearn");
+//toFixed
+document.getElementById('name').innerHTML = number.toFixed(2);
 
-//toUpperCase
-var txt = "Please Visit Us";
-document.getElementById('name').innerHTML = txt.toUpperCase();
+//GLOBAL METHOD
+var txtNumber = "12.356";
+document.getElementById('name').innerHTML = typeof Number(txtNumber);
 
-//toLowerCase
-var txt = "Please Visit Us";
-document.getElementById('name').innerHTML = txt.toLowerCase();
-
-//charAt
-var txt = "Please Visit Us";
-document.getElementById('name').innerHTML = txt.charAt(5);
-
-//split
-var txt = "a,b,c,d";
-var txtArray = txt.split(",");
-document.getElementById('name').innerHTML = txtArray[3];
-
-//call string like array
-var txt = "a,b,c,d";
-document.getElementById('name').innerHTML = txt[3];
-
-
-
+document.getElementById('name').innerHTML = parseInt(txtNumber);

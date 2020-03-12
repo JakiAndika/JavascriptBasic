@@ -1,10 +1,4 @@
-var person = {
-    firstName: "Ayunda",
-    lastName:"Susanti",
-    age:21,
-    walk(){
-        return "I am walking";
-    }
-};
-
-console.log(person['firstName']);
+function setName(){
+    var txtName = document.getElementById('txtName');
+    document.getElementById('name').innerHTML = txtName.value;
+}
